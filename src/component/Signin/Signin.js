@@ -26,7 +26,7 @@ onSubmitSignIn = () => {
 			password: this.state.signInPassword
 		})
 	})
-	.then(respose => respose.json())
+	.then(response => response.json())
 	.then(user => {
 		if (user.id) {
 			this.props.loadUser(user);

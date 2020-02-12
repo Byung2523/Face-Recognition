@@ -32,7 +32,7 @@ class Register extends React.Component {
 			name: this.state.name
 		})
 	})
-	.then(respose => respose.json())
+	.then(response => response.json())
 	.then(user => {
 		if (user.id) {
 			this.props.loadUser(user)
